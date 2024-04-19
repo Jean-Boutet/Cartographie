@@ -44,44 +44,53 @@
         #introduction{
             text-align: justify;
         }
+        .nav-item{
+            color: white;
+        }
+        .nav-item:hover{
+            background-color: white;
+            border-radius: 5%;
+            color: black;
+        }
     </style>
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#introduction-container">Cartographie des controverses</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#introduction-container"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#cinema" data-target="cinema">Cinéma</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#education" data-target="education">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#armee" data-target="armee">Armée</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#recherche" data-target="recherche">Recherche</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#medicale" data-target="medicale">Medical</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#introduction-container">Cartographie des controverses</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a onmouseover="this.style.color='black'" onmouseout="this.style.color='white'" style="color: white;transition: color 0.3s;" class="nav-link" href="#cinema" data-target="cinema">Cinéma</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onmouseover="this.style.color='black'" onmouseout="this.style.color='white'" style="color: white;transition: color 0.3s;" class="nav-link" href="#education" data-target="education">Éducation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onmouseover="this.style.color='black'" onmouseout="this.style.color='white'" style="color: white;transition: color 0.3s;" class="nav-link" href="#armee" data-target="armee">Armée</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onmouseover="this.style.color='black'" onmouseout="this.style.color='white'" style="color: white;transition: color 0.3s;" class="nav-link" href="#recherche" data-target="recherche">Recherche</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onmouseover="this.style.color='black'" onmouseout="this.style.color='white'" style="color: white;transition: color 0.3s;" class="nav-link" href="#medicale" data-target="medicale">Médical</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>    
+  
 
 <div class="container" id="introduction-container">
     <div class="row">
         <div class="col-md-12 content-div active">
-            <h2 class="mb-4" id="intro">Introduction</h2>
+            <h2 style="font-size: 3em;  " class="mb-4" id="intro">Introduction</h2>
         </div>
         <div class="col-mb-4">
             <div class="card content-div active">
@@ -117,7 +126,7 @@
 <div class="container" id="cinema-container">
     <div class="row">
         <div class="col-md-12 content-div">
-            <h2 class="mb-4">Cinéma</h2>
+            <h2 style="text-align: center;font-size: 3em;" class="mb-4">Cinéma</h2>
         </div>
         <div class="col-md-6">
             <div class="card content-div">
@@ -190,7 +199,7 @@
 <div class="container" id="education-container">
     <div class="row">
         <div class="col-md-12 content-div">
-            <h2 class="mb-4 ">Education</h2>
+            <h2 style="text-align: center;font-size: 3em;" class="mb-4 ">Education</h2>
         </div>
         <div class="col-md-6">
             <div class="card content-div">
@@ -297,7 +306,7 @@
 <div class="container" id="armee-container">
     <div class="row">
         <div class="col-md-12 content-div">
-            <h2 class="mb-4">Armée</h2>
+            <h2 style="text-align: center;font-size: 3em;" class="mb-4">Armée</h2>
         </div>
         <div class="col-md-6">
             <div class="card content-div">
@@ -363,8 +372,18 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="card content-div">
+            <div class="card-body">
+                <h5 class="card-title">Bibliographie</h5>
+                <p class="card-text"><ul>
+                <li><a href="https://fr.ign.com/">IGN - Portail d'actualités sur les jeux vidéo</a></li>
+                <li><a href="https://www.callofduty.com/fr/">Call of Duty Official Site - Site officiel de la franchise Call of Duty</a></li>
+                <li><a href="https://www.cairn.info/revue-inflexions-2016-2-page-145.htm">Cairn.info - Armée et jeux vidéo de guerre : quelles utilisations ?</a></li>
+                <li><a href="https://www.nytimes.com/section/technology/video-games">New York Times - Articles sur les jeux vidéo et la technologie</a></li>
 
+            </ul>
+                </p>
+            </div>
         </div>
     </div>
 </div>
@@ -379,9 +398,7 @@
             <div class="card content-div">
                 <div class="card-body">
                     <h5 class="mb-4">Comment les jeux vidéo arrivent à aider dans la recherche ?</h5>
-                    <p>L’utilisation des jeux vidéo pour faire avancer la recherche dans divers domaine n’est pas forcément quelque
-                        chose qui viendrais à l’esprit du plus grand nombre, pourtant c’est belle et bien une des aides les
-                        plus utiles pour faire avancé la recherche dans les domaines telle que la biologie, psychologie ou encore l’astronomie.  </p>
+                    <p> L’utilisation des jeux vidéo pour faire avancer la recherche dans divers domaines n’est pas forcément quelque chose qui viendrait à l’esprit du plus grand nombre, pourtant c’est bel et bien l'une des aides les plus utiles pour faire avancer la recherche dans des domaines tels que la biologie, la psychologie ou encore l’astronomie  </p>
                 </div>
             </div>
 
@@ -389,10 +406,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Cas d'une épidemie virtuelle</h5>
                     <p class="card-text">
-                        l'étude du sang vicée de WOWa été étudier par les chercheurs car il représente un cas unique de simulation d’épidémie
-                        a grande échelle impliquant à la fois un comportement humain non programmé et un grand nombre de participants à des tests dans un environnement
-                        contrôlé où les paramètres de la maladie sont connus, contrairement aux autres simulations qui avais pu être fais a l’aide d’un algorithme prédéfinie
-                        a l’avance qui s’occupais de gérer cette propagation de la maladie.
+                        L'étude du sang virtuel de WoW a été examinée par les chercheurs car il représente un cas unique de simulation d’épidémie à grande échelle impliquant à la fois un comportement humain non programmé et un grand nombre de participants à des tests dans un environnement contrôlé où les paramètres de la maladie sont connus. Contrairement aux autres simulations qui avaient été réalisées à l’aide d’un algorithme prédéfini à l’avance pour gérer la propagation de la maladie, WoW offre une opportunité d'étude plus réaliste.
                     </p>
                     <br>
                     <div class="img-container">
@@ -410,10 +424,7 @@
                 <div class="card-body">
                     <h5 class="card-title">lutte contre le covid-19 en 2020</h5>
                     <p class="card-text">
-                        Suite du projet Discovery ou le but était de marquer des groupes cellulaires présents dans le sang, afin d'accumuler
-                        des données permettant aux scientifiques de comparer les effets de l'infection notamment au niveau du système immunitaire
-                        ou plus de 700 000 personnes avais participé cette fois-ci a cette étude qui a permis de « contribué à l'équivalent de
-                        « plus de 330 années de recherche » IGN-France.
+                        Suite au projet Discovery, dont le but était de marquer des groupes cellulaires présents dans le sang afin d'accumuler des données permettant aux scientifiques de comparer les effets de l'infection, notamment au niveau du système immunitaire, plus de 700 000 personnes ont participé à cette étude. Celle-ci a permis de contribuer à l'équivalent de « plus de 330 années de recherche », selon IGN-France.
                     </p>
 
                     <div class="img-container">
@@ -426,13 +437,7 @@
                 <div class="card-body">
                     <h5 class="card-title">résumé</h5>
                     <p class="card-text">
-                        Les jeux vidéo offrent donc des perspectives fascinantes pour la recherche en biologie, comme en témoignent les exemples de l'épidémie
-                        virtuelle dans World of Warcraft et les projets EteRNA, Foldit, ainsi que Discovery dans Eve Online. Ces initiatives ont véritablement
-                        enrichi notre compréhension du comportement humain face aux épidémies et de la structure moléculaire, tout en montrant comment les jeux vidéo
-                        peuvent être des outils de collaboration scientifique efficaces. Cependant, il est crucial de reconnaître leurs limites, notamment en termes
-                        de représentativité des données et de considérations éthiques puisqu’elle ne représente pas un nombre si important de joueur comparée a leur
-                        nombre total mais reste néanmoins encourageant puisque ces utilisation montre un moyen d’offrir des collaboration massive et novatrice dans la
-                        recherche scientifique.
+                        Les jeux vidéo offrent des perspectives fascinantes pour la recherche en biologie, comme en témoignent les exemples de l'épidémie virtuelle dans World of Warcraft et des projets EteRNA, Foldit, ainsi que Discovery dans Eve Online. Ces initiatives ont véritablement enrichi notre compréhension du comportement humain face aux épidémies et de la structure moléculaire, tout en montrant comment les jeux vidéo peuvent être des outils de collaboration scientifique efficaces. Cependant, il est crucial de reconnaître leurs limites, notamment en termes de représentativité des données et de considérations éthiques, puisqu'elles ne représentent qu'une fraction des joueurs totaux. Néanmoins, ces utilisations restent encourageantes, car elles montrent un moyen d'offrir des collaborations massives et novatrices dans la recherche scientifique.
                     </p>
                     <div class="img-container">
                         <img width="100%" src="https://portail.polytechnique.edu/fxconseil/sites/pf_169/files/accueil/chaire-ubisoft-science-jeu-video-ecole-polytechnique-x.png">
@@ -444,13 +449,9 @@
         <div class="col-md-6">
             <div class="card content-div">
                 <div class="card-body">
-                    <h5 class="card-title">Compréhension des structure de molécule</h5>
+                    <h5 class="card-title">Compréhension des structures de molécules</h5>
                     <p class="card-text">
-                        les projet EteRNA et Foldit tire parti des capacités de résolution de problèmes de l'homme pour résoudre des problème trop difficiles pour les ordinateurs,
-                        compte tenu de leur manque d'intuition humaine, en mettant a la disposition de tout le monde une interface de « puzzle » permettant aux gens
-                        de proposé des solutions sur l’agencement de structure de molécule, ce qui a permis de grandement faire contribuer la recherche puisque des
-                        centaines de millier de gens on pus proposé des solutions qui ont pu être utilisé par les chercheur pour déterminé la structure de certaine
-                        protéine ou encore pour conceptualisé des structures élaborés de molécule d’ARN.
+                        Les projets EteRNA et Foldit tirent parti des capacités de résolution de problèmes de l'homme pour résoudre des problèmes trop difficiles pour les ordinateurs, compte tenu de leur manque d'intuition humaine. Ils mettent à la disposition de tout le monde une interface de « puzzle » permettant aux gens de proposer des solutions sur l’agencement de structures de molécules. Cela a grandement contribué à la recherche, puisque des centaines de milliers de personnes ont pu proposer des solutions qui ont été utilisées par les chercheurs pour déterminer la structure de certaines protéines ou encore pour conceptualiser des structures élaborées de molécules d’ARN.
                     </p>
 
                     <p>EteRNA :</p>
@@ -462,18 +463,14 @@
                     <div class="img-container">
                         <img width="100%" src="https://ateliercst.hypotheses.org/files/2021/05/MonkeyVirusProtein.png">
                     </div>
-
                 </div>
             </div>
 
             <div class="card content-div">
                 <div class="card-body">
-                    <h5 class="card-title">la recherche d’exoplanète</h5>
+                    <h5 class="card-title">la recherche d’exoplanètes</h5>
                     <p class="card-text">
-                        le projet Discovery du jeux Eve online en 2017 permis de contribué à la découverte d’exoplanète,
-                        les joueur devais analysé un spectre de lumière qui provenais directement des données relevé par les scientifique qui a permit
-                        de contribué grandement a la classification de planète puisque plus de 300 000 on participé a ce premier programme de recherche.
-                    </p>
+                        Le projet Discovery du jeu Eve Online en 2017 a permis de contribuer à la découverte d'exoplanètes. Les joueurs devaient analyser un spectre de lumière provenant directement des données relevées par les scientifiques, ce qui a grandement contribué à la classification des planètes, puisque plus de 300 000 personnes ont participé à ce premier programme de recherche</p>
 
                     <div class="img-container">
                         <img width="100%" src="https://i.ytimg.com/vi/12p-VhlFAG8/maxresdefault.jpg">
@@ -510,8 +507,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Les jeux vidéo dans la santé</h5>
                     <p class="card-text">
-                        C’est dernière années, l'utilisation des jeux vidéo dans le domaine de la santé suscite un intérêt croissant en tant
-                        qu'alternative innovante aux traitements traditionnels
+                        Ces dernières années, l'utilisation des jeux vidéo dans le domaine de la santé suscite un intérêt croissant en tant qu'alternative innovante aux traitements traditionnels. En effet, leur utilisation peut avoir un impact positif sur la santé mentale, notamment dans le contexte de troubles tels que la dépression, l'anxiété, les troubles de l'alimentation et les troubles bipolaires. En distrayant les patients de leurs symptômes et en renforçant les comportements positifs tels que l'exercice et la socialisation, les jeux vidéo peuvent servir de méthode complémentaire pour traiter ces conditions.
                     </p>
                     <p>
                         En effet leur utilisation peut avoir un impact positif sur la santé mentale, en particulier dans le contexte de troubles comme la dépression, l'anxiété, les troubles de l'alimentation et les troubles bipolaires. En distrayant les patients de leurs symptômes et en renforçant les comportements positifs tels que l'exercice et la socialisation, les jeux vidéo peuvent servir de méthode complémentaire pour traiter ces conditions.
@@ -526,11 +522,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Jouer, un réel risque ?</h5>
                     <p class="card-text">
-                        il existe des risques potentiels liés à l'utilisation excessive des jeux vidéo, tels que la dépendance
-                        et la surexposition. Une exposition prolongée à des jeux vidéo peut entraîner des problèmes d'estime de soi,
-                        d'isolement social et de négligence d'autres activités importantes, ce qui peut avoir des
-                        répercussions négatives sur la santé mentale à long terme. Il est donc crucial de surveiller
-                        attentivement l'utilisation des jeux vidéo si elle devient excessive.
+                        Il existe des risques potentiels liés à l'utilisation excessive des jeux vidéo, tels que la dépendance et la surexposition. Une exposition prolongée à ces jeux peut entraîner des problèmes d'estime de soi, d'isolement social et de négligence d'autres activités importantes, ce qui peut avoir des répercussions négatives sur la santé mentale à long terme. Il est donc crucial de surveiller attentivement l'utilisation des jeux vidéo si elle devient excessive.
                     </p>
                     <div class="img-container">
                         <img width="100%" src="https://afjv.com/2021/02/210217-jeuxvideo.jpg">
@@ -542,11 +534,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Qui crée ces jeux médicaux ?</h5>
                     <p class="card-text">
-                        Aujourd'hui, des entreprises s'investissent dans le domaine et collaborent afin
-                        de garantir de pouvoir proposé des contenue qualitatif dessus.
-                        Ainsi les entreprise tels que "Level Ex" et "Osso VR" sont aujourd’hui spécialisées dans
-                        le développement de logiciels et de technologies médicales, en collaboration avec
-                        des experts médicaux et des développeurs de jeux vidéo.
+                        Aujourd'hui, des entreprises s'investissent dans ce domaine et collaborent afin de garantir la qualité des contenus proposés. Ainsi, des entreprises telles que "Level Ex" et "Osso VR" se sont spécialisées dans le développement de logiciels et de technologies médicales, en collaboration avec des experts médicaux et des développeurs de jeux vidéo.
                     </p>
                     <div class="img-container">
                         <img width="100%" src="https://www.leparisien.fr/resizer/l4t2lwfdWC3WIgGF8QWycbPhGcw=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/SCXDSIPZVZLGLG2KTMKPXKMKVQ.jpg">
@@ -561,10 +549,7 @@
                 <div class="card-body">
                     <h5 class="card-title">De nouvelle méthode de traitement ?</h5>
                     <p class="card-text">
-                        les jeux vidéo sont une alternative intéressante aux traitements traditionnels, offrant une distraction agréable
-                        tout en encourageant l'engagement actif des patients. Ils peuvent également contribuer à améliorer le traitement de diverses pathologies
-                        en permettant aux patients de mieux comprendre et gérer leurs émotions, comme dans le cas des troubles bipolaires avec le jeu "bipoLife"
-                    </p>
+                        les jeux vidéo sont une alternative intéressante aux traitements traditionnels, offrant une distraction agréable tout en encourageant l'engagement actif des patients. Ils peuvent également contribuer à améliorer le traitement de diverses pathologies en permettant aux patients de mieux comprendre et gérer leurs émotions, comme dans le cas des troubles bipolaires avec le jeu "bipoLife"</p>
                     <div class="img-container">
                         <img width="100%" src="https://sante-digitale.fr/wp-content/uploads/2013/06/bipolife1.jpg">
                     </div>
@@ -574,9 +559,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Qu’est-ce que les serious games ?</h5>
                     <p class="card-text">
-                        Contrairement aux jeux traditionnels, les serious games intègrent des mécanismes ludiques tout en ayant pour
-                        vocation de transmettre des connaissances, de former, de résoudre des problèmes,
-                        de favoriser la communication ou même de simuler des situations réelles.
+                        Contrairement aux jeux traditionnels, les serious games intègrent des mécanismes ludiques tout en ayant pour vocation de transmettre des connaissances, de former, de résoudre des problèmes, de favoriser la communication ou même de simuler des situations réelles.
                     </p>
                     <div class="img-container">
                         <img width="100%" src="https://www.alezzi.fr/wp-content/uploads/2022/07/serious-game-alezzi2.png">
